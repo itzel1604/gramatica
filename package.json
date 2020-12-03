@@ -1,0 +1,25 @@
+{
+  "name": "gramatica",
+  "version": "1.0.0",
+  "description": "programa de gramatica",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Itzel",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-builder": "^22.9.1"
+  },
+  "build":{
+    "appId": "com.itzel.gramatica",
+    "win":{
+      "target": "nsis",
+      "icon": "build/pinetree"
+     }
+  }
+}
